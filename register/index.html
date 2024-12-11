@@ -1,0 +1,93 @@
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+</head>
+<body>
+    <div class="container d-flex align-items-center vh-100">
+        <div class="registration-form p-4 rounded mx-auto">
+            <h1 class="text-center mb-4">Register</h1>
+            <form id="registrationForm">
+                <div class="mb-3">
+                    <label for="username" class="form-label">
+                        <i class="fas fa-user" style="color: black;"></i> Username
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user" style="color: black;"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="dob" class="form-label">
+                        <i class="fas fa-calendar-alt" style="color: black;"></i> Date of Birth
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-calendar-alt" style="color: black;"></i></span>
+                        </div>
+                        <input type="date" class="form-control" id="dob" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">
+                        <i class="fas fa-envelope" style="color: black;"></i> Email
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-envelope" style="color: black;"></i></span>
+                        </div>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">
+                        <i class="fas fa-lock" style="color: black;"></i> Password
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-lock" style="color: black;"></i></span>
+                        </div>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="retype-password" class="form-label">
+                        <i class="fas fa-lock" style="color: black;"></i> Retype Password
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-lock" style="color: black;"></i></span>
+                        </div>
+                        <input type="password" class="form-control" id="retype-password" required>
+                    </div>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+                    <label class="form-check-label" for="terms">
+                        I agree to the <a href="#" class="text-primary">terms and conditions</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Register</button>
+                <p class="mt-3 text-center">
+                    <small>If you already have an account, <a href="index.html">click here to sign in</a>.</small>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Load jQuery before your custom script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " async></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js" async></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
