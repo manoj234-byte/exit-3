@@ -1,0 +1,54 @@
+:root {
+    --background-color: rgba(255, 255, 255, 0.9);
+    --form-width: 500px;
+    --form-min-height: 400px;
+    --form-border-radius: 10px;
+    --form-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-image: url('C:/Users/manoj/Downloads/representation-user-experience-interface-design.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.registration-form {
+    background-color: var(--background-color);
+    border-radius: var(--form-border-radius);
+    box-shadow: var(--form-box-shadow);
+    padding: 20px;
+    width: var(--form-width);
+    height: auto;
+    min-height: var(--form-min-height);
+}
+
+h1 {
+    color: #007bff;
+    font-family: 'Arial', sans-serif;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.input-group-text {
+    background-color: transparent; /* Make the background of the icon transparent */
+    border: none; /* Remove border for a cleaner look */
+}
+
+.form-check-label {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}

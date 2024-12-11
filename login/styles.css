@@ -1,0 +1,32 @@
+:root {
+    --background-color: #f8f9fa; /* Light gray background */
+    --form-background-color: white; /* White background for the form */
+    --form-max-width: 350px; /* Maximum width for the form */
+    --form-padding: 20px; /* Padding for the form */
+    --border-radius: 8px; /* Border radius for the form */
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    --font-size: 14px; /* Base font size */
+    --input-height: 38px; /* Input height */
+}
+
+body {
+    background-color: var(--background-color); /* Use the global background color */
+}
+
+.form-control {
+    height: var(--input-height); /* Use the global input height */
+    font-size: var(--font-size); /* Use the global font size */
+}
+
+.login-container {
+    max-width: var(--form-max-width); /* Use the global max width */
+    margin: 50px auto; /* Center the form with margin on top and bottom */
+    padding: var(--form-padding); /* Use the global padding */
+    background-color: var(--form-background-color); /* Use the global form background color */
+    border-radius: var(--border-radius); /* Use the global border radius */
+    box-shadow: var(--box-shadow); /* Use the global box shadow */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
